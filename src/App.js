@@ -7,6 +7,9 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import ContactUs from './components/ContactUs/ContactUs';
+import Contractor_page from "./pages/Contractor-page/Contractor_page";
+import Materials from './pages/Materials/Materials';
+import ArcAndDes from './pages/ArcAndDes/ArcAndDes';
 
 const Layout = () => {
   return (
@@ -38,7 +41,19 @@ const router = createBrowserRouter([
     },{
       path: '/contact-us',
       element: <ContactUs />
+    },{
+      path: '/contractors/:id',
+      element: <Contractor_page />
+    },
+    {
+        path: "/architecture/:id",
+        element: <ArcAndDes/>
+    },
+    {
+      path:"/materials/:id",
+      element:<Materials/>
     }
+
   ]
 }
 ])
