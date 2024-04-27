@@ -1,23 +1,32 @@
-.cards {
+.title {
+  padding-left: 20px;
+  background: #e8e8e8;padding-top: 60px;
+  text-decoration: overline;
+  margin: 0;
+}
+.marbalscards {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   justify-content: center;
   gap: 4rem;
   padding-top: 50px;
   padding-bottom: 50px;
   background: #e8e8e8;
+  padding-left: 25px;
+  padding-right: 25px;
 
-  .card {
+  .marbalscard {
     border: none;
     border-radius: 20px;
     padding: 10px;
     background-color: #f4f4f4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    flex: 1 0 calc((80% - 3 * 4rem) / 4); /* Set flex-basis for each card */
 
     img {
-      width: 350px;
-      height: 450px;
+      width: 100%;
+      height: auto;
       border-radius: 20px;
     }
 
