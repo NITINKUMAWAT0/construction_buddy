@@ -5,6 +5,8 @@ import Products from './pages/Products/Products';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import About from './components/About/About';
+import ContactUs from './components/ContactUs/ContactUs';
 
 const Layout = () => {
   return (
@@ -30,6 +32,12 @@ const router = createBrowserRouter([
     }, {
       path: '/product/:id',
       element: <Product />
+    },{
+      path: '/about',
+      element: <About />
+    },{
+      path: '/contact-us',
+      element: <ContactUs />
     }
   ]
 }
