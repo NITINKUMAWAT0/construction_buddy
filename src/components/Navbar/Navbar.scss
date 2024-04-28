@@ -1,6 +1,7 @@
 .navbar {
-  background-color: #cacaca;
-  color: #000000;
+  background: linear-gradient(90deg, rgb(60, 127, 175) 0%, rgba(0,43,82,1) 100%);
+
+  color: #f5f5f5;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -23,8 +24,10 @@
   }
 
   .right .item a {
-    color: #000000;
+    color: #fbfbfb;
     text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
 
     &:hover {
       text-decoration: underline;

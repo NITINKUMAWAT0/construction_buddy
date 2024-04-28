@@ -1,6 +1,7 @@
 .footer {
     padding: 20px 50px 10px 50px;
-    background-color: #ebebeb;
+  background: linear-gradient(90deg, rgb(60, 127, 175) 0%, rgba(0,43,82,1) 100%);
+    
     .top {
       display: flex;
       gap: 50px;
@@ -16,16 +17,19 @@
         h1{
           font-size: 18px;
           font-weight: 500;
-          color: #000000;
+          color: #ffffff;
         }
   
         span{
-          color: rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 500;
         }
 
         p{
           font-size: 16px;
-          color: rgb(0, 0, 0);
+          font-weight: 500;
+          color: rgb(255, 255, 255);
         }
       }
     }
@@ -43,7 +47,7 @@
         .copyright{
           margin-left: 20px;
           font-size: 12px;
-          color: rgb(44, 44, 44);
+          color: rgb(247, 247, 247);
         }
       }
     }

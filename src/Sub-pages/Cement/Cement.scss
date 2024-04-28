@@ -1,6 +1,7 @@
 .title {
   text-align: center; /* Center align the text */
-  background: #e8e8e8;
+  background: linear-gradient(90deg, rgb(112, 156, 187) 0%, rgb(30, 96, 158) 100%);
+
   /* Same background color as the cards */
   padding: 20px; /* Add padding for spacing */
   margin: 0; /* Remove default margin */
@@ -14,7 +15,8 @@
   gap: 4rem;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #e8e8e8;
+  background: linear-gradient(90deg, rgb(112, 156, 187) 0%, rgb(30, 96, 158) 100%);
+
   padding-left: 25px;
   padding-right: 25px;
 

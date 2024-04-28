@@ -1,0 +1,50 @@
+/* about.scss */
+.about-section,
+.mission-section,
+.team-section {
+  background: linear-gradient(90deg, rgb(112, 156, 187) 0%, rgb(30, 96, 158) 100%);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px; /* Adjust as needed */
+}
+
+p {
+  font-size: 18px; /* Adjust as needed */
+}
+
+ul {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.team-member h3,
+.team-member p {
+  margin: 10px 0;
+  font-size: 24px; /* Adjust as needed */
+}

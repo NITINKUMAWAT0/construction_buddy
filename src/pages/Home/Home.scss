@@ -5,13 +5,14 @@
   gap: 4rem;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #e8e8e8;
+  background: linear-gradient(90deg, rgb(112, 156, 187) 0%, rgb(30, 96, 158) 100%);
+  
+  
 
   .card {
     border: none;
     border-radius: 20px;
     padding: 10px;
-    background-color: #f4f4f4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 
