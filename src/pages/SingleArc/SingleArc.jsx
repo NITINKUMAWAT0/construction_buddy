@@ -19,10 +19,9 @@ const SingleArc = ({ selectedArc, onClose }) => {
         <p>Address: {selectedArc?.address}</p>
         {/* Add the location URL */}
         <a href={selectedArc?.location} className="navigation">
-          <p>
+          
             <FaLocationArrow />
             <span>Directions</span>
-          </p>
         </a>
       </div>
     </div>

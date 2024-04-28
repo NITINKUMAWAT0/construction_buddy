@@ -18,10 +18,10 @@ const TilesSingle = ({ selectedTile, onClose }) => {
         <p>Address: {selectedTile?.address}</p>
         {/* Add the location URL */}
         <a href={selectedTile?.location} className="navigation">
-          <p>
+    
             <FaLocationArrow />
             <span>Directions</span>
-          </p>
+       
         </a>
       </div>
     </div>

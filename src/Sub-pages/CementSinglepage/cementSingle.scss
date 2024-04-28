@@ -34,16 +34,14 @@
     }
   
     .right {
-      margin-top: 4rem;
-  
       .navigation {
         cursor: pointer;
-        color: white;
+          color: rgb(27, 94, 176);
         text-decoration: none;
-  
-        &:hover {
-          text-decoration: underline;
-        }
+        border: none;
+        background-color: #fff;
+        padding: 10px;
+        border-radius:20px;
       }
     }
   }

@@ -19,10 +19,10 @@ const CementSingle = ({ selectedCement, onClose }) => {
         <p>Address: {selectedCement?.address}</p>
         {/* Add the location URL */}
         <a href={selectedCement?.location} className="navigation">
-          <p>
+        
             <FaLocationArrow />
             <span>Directions</span>
-          </p>
+    
         </a>
       </div>
     </div>

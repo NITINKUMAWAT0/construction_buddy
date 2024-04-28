@@ -19,10 +19,10 @@ const SingleContractorPage = ({ selectedContractor, onClose }) => {
       <p>Address: {selectedContractor?.address}</p>
       <p>Details: {selectedContractor?.details}</p>
       <a href={selectedContractor?.location} className="navgation">
-  <p >
+  
     <FaLocationArrow/>
     <span>Directions</span>
-  </p>
+
 </a>
 
      </div>

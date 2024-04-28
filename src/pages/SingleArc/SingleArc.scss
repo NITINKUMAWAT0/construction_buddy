@@ -34,13 +34,19 @@
     }
   
     .right {
-      margin-top: 4rem;
+
   
       .navigation {
         cursor: pointer;
-        color: white;
         text-decoration: none;
-  
+
+        color: rgb(27, 94, 176);
+
+        border: none;
+        background-color: #fff;
+        padding: 10px;
+        border-radius:20px;
+        
         &:hover {
           text-decoration: underline;
         }

@@ -18,10 +18,10 @@ const MarbleSingle = ({ selectedMarble, onClose }) => {
         <p>Address: {selectedMarble?.address}</p>
         {/* Add the location URL */}
         <a href={selectedMarble?.location} className="navigation">
-          <p>
+          
             <FaLocationArrow />
             <span>Directions</span>
-          </p>
+        
         </a>
       </div>
     </div>
