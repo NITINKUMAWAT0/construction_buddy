@@ -1,0 +1,50 @@
+.SingleTile {
+    display: flex;
+    color: aliceblue;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, rgb(112, 156, 187) 0%, rgb(30, 96, 158) 100%);
+  
+    .left {
+      margin-right: -55rem;
+  
+      .close-button {
+        padding: 10px;
+        border-radius: 10%;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        display: flex;
+        font-weight: 700;
+        margin-left: 90rem;
+        margin-top: 1rem;
+        font-size: 14px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+      }
+  
+      img {
+        margin-top: -20px;
+        width: 400px;
+        padding-left: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  
+    .right {
+      margin-top: 4rem;
+  
+      .navigation {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

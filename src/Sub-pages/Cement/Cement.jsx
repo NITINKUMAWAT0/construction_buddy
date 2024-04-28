@@ -1,6 +1,12 @@
-import React from "react";
+
+  import React, { useState } from "react";
 import "./Cement.scss";
+import CementSingle from "../CementSinglepage/cementSingle";
+
 const Cement = () => {
+  const [selectedCement, setSelectedCement] = useState(null);
+
+  
   const Data = [
     {
       id: 1,
@@ -172,25 +178,45 @@ const Cement = () => {
       img: "https://content.jdmagicbox.com/comp/ratlam/t6/9999p7412.7412.190708100559.h1t6/catalogue/shree-guru-kripa-traders-ratlam-building-material-dealers-u9saj96kwf.jpg",
     },
   ];
+
+
+  const handleClick = (cement) => {
+    if (selectedCement && selectedCement.id === cement.id) {
+      // If the same cement card is clicked again, close it
+      setSelectedCement(null);
+    } else {
+      setSelectedCement(cement);
+    }
+  };
+
+  const handleClose = () => {
+    setSelectedCement(null);
+  };
+
   return (
     <>
-    <h1 className="title">Cements</h1>
-    <div className="cementcards">
-      {Data.map((product) => (
-        <div key={product.id} className="cementcard">
-          <img src={product.img} alt="" />
-          <h4 style={{ color: "black", textDecoration: "none" }}>
-            {product.name}
-          </h4>
-          <p>+91 {product.number}</p>
-          <p>
-            Experience : <span>{product.experience}</span>
-          </p>
+      <h1 className="title">Cements</h1>
+      {selectedCement ? (
+        <CementSingle selectedCement={selectedCement} onClose={handleClose} />
+      ) : (
+        <div className="cementcards">
+          {Data.map((cement) => (
+            <div key={cement.id} className="cementcard" onClick={() => handleClick(cement)}>
+              <img src={cement.img} alt="" />
+              <h4 style={{ color: "black", textDecoration: "none" }}>
+                {cement.name}
+              </h4>
+              <p>+91 {cement.number}</p>
+              <p>
+                Experience : <span>{cement.experience}</span>
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      )}
     </>
   );
 };
 
 export default Cement;
+

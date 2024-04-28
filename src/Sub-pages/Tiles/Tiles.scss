@@ -14,7 +14,7 @@
   text-decoration: underline;
 }
 
-.Tilescards {
+.tilescards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -27,11 +27,11 @@
     rgb(30, 96, 158) 100%
   );
 
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center; // Center align the title
 
-  .Tilescard {
+  .tilescard {
     border: none;
     border-radius: 20px;
     padding: 10px;

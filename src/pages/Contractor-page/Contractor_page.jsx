@@ -8,7 +8,7 @@ const Contractor_page = () => {
   const Data = [
     {
       id: 1,
-      name: "Sunrays Contracting",
+      name: "Sunrays Contractors",
       number: 9828378007,
       experience: "7 years",
       address:
@@ -16,6 +16,8 @@ const Contractor_page = () => {
       details:
         "Builders, contractors, civil, interior design, modern architecture, more than 75 bungalows, years of experience.",
       img: "https://media.licdn.com/dms/image/C4E0BAQFgdkE19Nud0g/company-logo_200_200/0/1630616597570/sunray_construction_notices_inc_logo?e=2147483647&v=beta&t=15k9_zNlTPV3ruCYQWVfFEwkk8ORPqiNvObnnj0uoME",
+      location:
+        "https://www.google.com/maps/place//@26.9130789,75.7443772,17z/data=!4m5!1m2!2m1!1sSunrays+Contracting+is+situated+at+A-75,+Vaishali+Nagar,+Jaipur+302021!3m1!15sCkZTdW5yYXlzIENvbnRyYWN0aW5nIGlzIHNpdHVhdGVkIGF0IEEtNzUsIFZhaXNoYWxpIE5hZ2FyLCBKYWlwdXIgMzAyMDIxkgEQY29tcG91bmRfc2VjdGlvbuABAA?entry=ttu",
     },
     {
       id: 2,
@@ -27,6 +29,7 @@ const Contractor_page = () => {
       address:
         "Building No.- 112 Jagdamba Colony, Nursury Circle, Vaishali Nagar, Jaipur - 302021 (Opposite Max Vision Eye Care Center)",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGSByJLGy4r3r-nSlgDug_jfLC5Gd4cQbXmSOMPZu98Q&s",
+      location: "https://maps.app.goo.gl/hF2ArMNw7dnFfonL7",
     },
     {
       id: 3,
@@ -38,6 +41,7 @@ const Contractor_page = () => {
       address:
         "2nd floor, jay tower, near, Gopalpura Bypass Rd, Muktanand Nagar, Gopal Pura Mode, Jaipur, Rajasthan 302017",
       img: "https://lh3.googleusercontent.com/p/AF1QipN04rO9hvZkxnB_DI59rhU7boz3oiboUkgSrrBz=s1360-w1360-h1020",
+      location: "https://maps.app.goo.gl/4UkCt8nwZK5wVVvF9",
     },
     {
       id: 4,
@@ -49,6 +53,7 @@ const Contractor_page = () => {
       address:
         " C-148 kanha vihar, bura Patel marg, Ajmer Rd, Lalarpura, Jaipur, Rajasthan 302021",
       img: "https://lh3.googleusercontent.com/p/AF1QipN1UzXmVYwTY0SIC_PNpg4haEbrO8--qQ0MdLYz=s1360-w1360-h1020",
+      location: "https://maps.app.goo.gl/S1xdDi843QqTDKiA8",
     },
     {
       id: 5,
@@ -60,16 +65,19 @@ const Contractor_page = () => {
       address:
         "S-56, Triangle Chamber, Tonk Rd, Himmat Nagar, Bajaj Nagar, Jaipur, Rajasthan 302018",
       img: "https://content.jdmagicbox.com/comp/jaipur/16/0141p141stdg040416/catalogue/triangle-engineers-pvt-ltd-tonk-road-jaipur-estate-agents-yv3zhz1pe6.jpg",
+      location: "https://maps.app.goo.gl/8LJ1KZ7SAFmPjb1w6",
     },
     {
       id: 6,
-      name: "Western Pearly (India Agro)",
+      name: "Western Pearl (India Agro)",
       number: "0141-4013555",
       experience: "16 years",
       address: "402, Alaknanda, B-87 Ganesh Marg C-scheme, Jaipur",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcKs754YR4UBNwpRrJkK74oan5wUxwWILFPe5RbCvyw&s",
       details:
         "Western Pearly (India Agro) is a renowned architectural firm with a rich legacy of crafting innovative and sustainable designs. Our team comprises highly skilled professionals who blend creativity with technical expertise to deliver exceptional results. With a track record spanning over a decade, we have successfully completed numerous projects, ranging from residential complexes to commercial spaces.",
+      location:
+        "https://www.anandproperties.com/jaipur/architect/westernpea.htm",
     },
     {
       id: 7,
@@ -80,12 +88,16 @@ const Contractor_page = () => {
       img: "https://www.dzinepartners.com/wp-content/uploads/2021/01/trans-D-ZINE-partners-logo-02.png",
       details:
         "D-zine Associates is more than just an architectural firm; we're creators of timeless spaces that inspire and delight. Our multidisciplinary team brings together a diverse range of talents and perspectives, ensuring that each project is approached with fresh ideas and innovative solutions. With over a decade of experience in the industry, we have earned a reputation for excellence and attention to detail.",
+      location:
+        "https://www.google.com/maps/place/Dzine+Furniture/@20.5182439,64.523807,5z/data=!4m10!1m2!2m1!1sD-zine+Associates!3m6!1s0x396db3eed38aa207:0x8db53b563494e488!8m2!3d26.9355281!4d75.791924!15sChFELXppbmUgQXNzb2NpYXRlc5IBD2Z1cm5pdHVyZV9zdG9yZeABAA!16s%2Fg%2F11f2wltvn0?entry=ttu",
     },
     {
       id: 8,
       name: "Lakshya Designers & Planner",
       number: "7947124400",
       experience: "15 years",
+      location: "https://maps.app.goo.gl/aMSmPtXeD5Jpwmy59",
+
       address:
         " Shekhawati Nagar Vistar, 76-A, Kalwar Rd, near Govindam Tower, Kardhani Govindpura, Govindpura, Jaipur, Rajasthan 302012",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLU6b8uVIqZO4jaYd9ZuyqPodPiHM_2tuJH5V78JAHw&s",
@@ -96,6 +108,8 @@ const Contractor_page = () => {
       id: 9,
       name: "MPS & Associates",
       number: "9829258097",
+      location:
+        "https://www.google.com/maps/place/mps+%26+associates/@19.9128288,64.5184067,5z/data=!4m10!1m2!2m1!1sMPS+%26+Associates!3m6!1s0x396db36dcc007855:0x25980a39a467ae78!8m2!3d26.9332778!4d75.7463144!15sChBNUFMgJiBBc3NvY2lhdGVzkgEJYXJjaGl0ZWN04AEA!16s%2Fg%2F11bw4sf_2m?entry=ttu",
       experience: "19 years",
       address:
         "146, K5C Scheme Rd, Chand Bihari Nagar, Khatipura, Jaipur, Rajasthan 302012",
@@ -107,6 +121,7 @@ const Contractor_page = () => {
       id: 10,
       name: "3i Works",
       number: "9928389231",
+      location: "",
       experience: "10 years",
       address: "Shop No. G-3, Mirza Ismail Rd, Kanti Nagar, Jaipur, Rajasthan",
       img: "https://media.licdn.com/dms/image/D4E0BAQFOW1d6MXhnZA/company-logo_200_200/0/1688062911689/3i_tech_works_inc_logo?e=2147483647&v=beta&t=RYDs1okwm0IKMvSRlqkC-E7S7FVkBgPXBjtXijqgPCo",
@@ -118,6 +133,8 @@ const Contractor_page = () => {
       name: "Designarch",
       number: "9828287799",
       experience: "20 years",
+      location:
+        "https://www.google.com/maps/place/DESIGN+ARCH/@26.8345644,75.8443582,17z/data=!3m1!4b1!4m6!3m5!1s0x396db62982ae62e7:0xe4924cd425dedcf5!8m2!3d26.8345596!4d75.8469331!16s%2Fg%2F11gdqwjq0t?entry=ttu",
       address:
         "C-1, Anand Vihar, Railway Colony, Jagatpura, Jaipur, Rajasthan 302017",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2VimAfDpAsK4K30BaFu2s_OpKvlW3h6p6Jir144RXw&s",
@@ -128,6 +145,7 @@ const Contractor_page = () => {
       id: 12,
       name: "21 Avenue Projects",
       number: "7041893179",
+      location: "https://maps.app.goo.gl/b7EkPnxf3SQgr65d6",
       experience: "11 years",
       address: "4/122 Vidhyadhar Nagar, Vidhyadhar Nagar, Jaipur - 302039",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq6882XdoeYcslvd47fFaGhqFHJDvtoZ6XwjWrfrAK0g&s",

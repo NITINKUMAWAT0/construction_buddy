@@ -1,8 +1,12 @@
-import React from "react";
+
+
+import React, { useState } from "react";
 import "./Tiles.scss";
-import { Link } from "react-router-dom";
+import TilesSingle from "../TilesSinglepage/TilesSingle";
 
 const Materials = () => {
+  const [selectedTile, setSelectedTile] = useState(null);
+
   const Data = [
     {
       id: 1,
@@ -121,7 +125,7 @@ const Materials = () => {
       name: "Maa Karni Indra Granite and Marbles",
       number: 9982219657,
       experience: "7 years",
-
+  
       address: "Takiya ki choki, Marble mandi, Gokulpura, Jaipur- 302012",
       img: "https://content.jdmagicbox.com/comp/jaipur/e9/0141px141.x141.161223143555.h3e9/catalogue/platinum-tiles-centre-jhotwara-jaipur-tile-dealers-1gpm0n1nzh-250.jpg",
     },
@@ -130,7 +134,7 @@ const Materials = () => {
       name: "Vinayak Tiles and Sanitary",
       number: 9667676250,
       experience: "7 years",
-
+  
       address:
         "Marble Mandi Choraha, Gokulpura, Kalwar road, Jhotwara, Jaipur- 302012",
       img: "https://images.jdmagicbox.com/comp/gandhidham/q3/9999p2836.2836.160621165426.q3q3/catalogue/vinayak-tiles-and-sanitary-gandhidham-ho-gandhidham-tile-dealers-qzyjo9.jpg",
@@ -166,7 +170,7 @@ const Materials = () => {
       name: "Shri Baba Stones and Sanitary Wares",
       number: 9462089002,
       experience: "9 years",
-
+  
       address: "4, Vikash Nagar, Kalwar road, Jhotwara, Jaipur- 302012",
       img:'https://content.jdmagicbox.com/comp/jaipur/b8/0141px141.x141.110414163752.r9b8/catalogue/shri-baba-stone-and-saintary-wares-jhotwara-jaipur-tile-dealers-9mze9y.jpg'
     },
@@ -178,29 +182,44 @@ const Materials = () => {
       address:
         "Gokulpura Road, Behind Power house , Kalwar Road, Jaipur- 302012",
     img:'https://content.jdmagicbox.com/comp/hyderabad/g3/040pxx40.xx40.150721164004.y7g3/catalogue/sri-krishna-granite-and-marbles-miyapur-hyderabad-granite-tile-dealers-70otrdsrl1.jpg'
-
+  
     },
   ];
+  
+
+  const handleClick = (tile) => {
+    if (selectedTile && selectedTile.id === tile.id) {
+      setSelectedTile(null);
+    } else {
+      setSelectedTile(tile);
+    }
+  };
+
+  const handleClose = () => {
+    setSelectedTile(null);
+  };
 
   return (
     <>
       <h1 className="title">Tiles</h1>
-      <div className="Tilescards">
-        {Data.map((product) => (
-          // <Link  to={`/materials/${product.name.toLowerCase().replace('&', 'and')}/${product.id}`}>
-          <div key={product.id} className="Tilescard">
-            <img src={product.img} alt="" />
-            <h4 style={{ color: "black", textDecoration: "none" }}>
-              {product.name}
-            </h4>
-            <p>+91 {product.number}</p>
-          <p>
-            Experience : <span>{product.experience}</span>
-          </p>
-          </div>
-          // </Link>
-        ))}
-      </div>
+      {selectedTile ? (
+        <TilesSingle selectedTile={selectedTile} onClose={handleClose} />
+      ) : (
+        <div className="tilescards">
+          {Data.map((tile) => (
+            <div key={tile.id} className="tilescard" onClick={() => handleClick(tile)}>
+              <img src={tile.img} alt="" />
+              <h4 style={{ color: "black", textDecoration: "none" }}>
+                {tile.name}
+              </h4>
+              <p>+91 {tile.number}</p>
+              <p>
+                Experience : <span>{tile.experience}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };
