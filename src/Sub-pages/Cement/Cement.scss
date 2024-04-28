@@ -1,49 +1,61 @@
 .title {
-  padding-left: 20px;
-  background: #e8e8e8;padding-top: 60px;
-  text-decoration: overline;
-  margin: 0;
+  text-align: center; /* Center align the text */
+  background: #e8e8e8;
+  /* Same background color as the cards */
+  padding: 20px; /* Add padding for spacing */
+  margin: 0; /* Remove default margin */
+  text-decoration: underline;
 }
+
 .cementcards {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center;
-    gap: 4rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #e8e8e8;
-    padding-left: 25px;
-    padding-right: 25px;
-  
-    .cementcard {
-      border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #e8e8e8;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  .cementcard {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1 0 calc((80% - 3 * 4rem) / 4);
+
+    img {
+      width: 100%;
+      height: auto;
       border-radius: 20px;
-      padding: 10px;
-      background-color: #f4f4f4;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      flex: 1 0 calc((80% - 3 * 4rem) / 4); /* Set flex-basis for each card */
-  
-      img {
-        width: 100%; 
-        height: auto; 
-        border-radius: 20px;
-      }
-  
-      h4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: -0.5px;
-        margin-bottom: -0.5px;
-        font-weight: 400;
-        color: black;
-        text-decoration: none;
-      }
-  
-      &:hover {
-        transform: scale(1.06);
-        cursor: pointer;
-      }
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5px;
+      margin-bottom: -0.5px;
+      font-weight: 400;
+      color: black;
+      text-decoration: none;
+    }
+
+    p {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 6px;
+      margin: 0;
+    }
+
+    &:hover {
+      transform: scale(1.06);
+      cursor: pointer;
     }
   }
+}

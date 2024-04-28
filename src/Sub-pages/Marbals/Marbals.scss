@@ -1,12 +1,15 @@
 .title {
-  padding-left: 20px;
-  background: #e8e8e8;padding-top: 60px;
-  text-decoration: overline;
-  margin: 0;
+  text-align: center; /* Center align the text */
+  background: #e8e8e8;
+  /* Same background color as the cards */
+  padding: 20px; /* Add padding for spacing */
+  margin: 0; /* Remove default margin */
+  text-decoration: underline;
 }
+
 .marbalscards {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
   padding-top: 50px;
@@ -22,11 +25,14 @@
     background-color: #f4f4f4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    flex: 1 0 calc((80% - 3 * 4rem) / 4); /* Set flex-basis for each card */
+    flex: 1 0 calc((80% - 3 * 4rem) / 4);
+    display: flex;
+    flex-direction: column; /* Ensure contents stack vertically */
 
     img {
       width: 100%;
-      height: auto;
+      height: 200px;
+      object-fit: cover;
       border-radius: 20px;
     }
 
@@ -34,11 +40,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: -0.5px;
-      margin-bottom: -0.5px;
+      margin: 0;
       font-weight: 400;
       color: black;
       text-decoration: none;
+    }
+
+    p {
+      flex-grow: 1; /* Allow paragraphs to take up remaining space */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0; /* Remove default margin */
+      padding-top: 6px;
     }
 
     &:hover {
