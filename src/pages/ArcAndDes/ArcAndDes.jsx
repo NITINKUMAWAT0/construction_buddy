@@ -164,7 +164,7 @@ const Contractor_page = () => {
 
   return (
     <>
-      <h1 className="title">Our Contractors</h1>
+      <h1 className="title">Designers & Architect</h1>
       {selectedArc ? (
         <SingleArc
           selectedArc={selectedArc}
