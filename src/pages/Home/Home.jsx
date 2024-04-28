@@ -11,7 +11,7 @@ const Home = () => {
     },
     {
       id: 2,
-      name: "Architecture & Designs",
+      name: "Architecture",
       img: "https://thearchitectsdiary.com/wp-content/uploads/2023/02/Arch2O-architectural-sketching-10-architecture-sketching-tips-1-1024x585.jpg",
     },
     {

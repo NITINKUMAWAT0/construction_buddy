@@ -1,6 +1,10 @@
-import React from "react";
+// Contractor_page.jsx
+import React, { useState } from "react";
 import "./Contractor_page.scss";
+import SingleContractorPage from "../SingleContractorPage/SingleContractorPage";
+
 const Contractor_page = () => {
+  const [selectedContractor, setSelectedContractor] = useState(null);
   const Data = [
     {
       id: 1,
@@ -82,7 +86,8 @@ const Contractor_page = () => {
       name: "Lakshya Designers & Planner",
       number: "7947124400",
       experience: "15 years",
-      address: " Shekhawati Nagar Vistar, 76-A, Kalwar Rd, near Govindam Tower, Kardhani Govindpura, Govindpura, Jaipur, Rajasthan 302012",
+      address:
+        " Shekhawati Nagar Vistar, 76-A, Kalwar Rd, near Govindam Tower, Kardhani Govindpura, Govindpura, Jaipur, Rajasthan 302012",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLU6b8uVIqZO4jaYd9ZuyqPodPiHM_2tuJH5V78JAHw&s",
       details:
         "Lakshya Designers & Planner is a leading architectural firm known for its innovative designs and meticulous planning. With over a decade of experience, we have successfully executed numerous projects ranging from residential buildings to commercial complexes. Our team of skilled architects and planners is committed to delivering exceptional results that meet and exceed client expectations.",
@@ -92,7 +97,8 @@ const Contractor_page = () => {
       name: "MPS & Associates",
       number: "9829258097",
       experience: "19 years",
-      address: "146, K5C Scheme Rd, Chand Bihari Nagar, Khatipura, Jaipur, Rajasthan 302012",
+      address:
+        "146, K5C Scheme Rd, Chand Bihari Nagar, Khatipura, Jaipur, Rajasthan 302012",
       img: "https://media.licdn.com/dms/image/C4E1BAQEGnghk2hyBPQ/company-background_10000/0/1584433067100?e=2147483647&v=beta&t=Kw5GsCQbHjwkELN5kkhQ2KDNDKK4WwntAFRDwwf1Qq4",
       details:
         "MPS & Associates is a leading architectural consultancy known for its commitment to quality, innovation, and client satisfaction. Our experienced team brings together a wealth of expertise in architecture, interior design, and urban planning to create spaces that resonate with the needs and aspirations of our clients. With nearly two decades of experience, we continue to set new standards of excellence in the industry.",
@@ -112,7 +118,8 @@ const Contractor_page = () => {
       name: "Designarch",
       number: "9828287799",
       experience: "20 years",
-      address: "C-1, Anand Vihar, Railway Colony, Jagatpura, Jaipur, Rajasthan 302017",
+      address:
+        "C-1, Anand Vihar, Railway Colony, Jagatpura, Jaipur, Rajasthan 302017",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2VimAfDpAsK4K30BaFu2s_OpKvlW3h6p6Jir144RXw&s",
       details:
         "Designarch is a premier architectural firm known for its visionary approach to design and unwavering commitment to excellence. With two decades of experience, we have successfully completed a diverse portfolio of projects, ranging from residential developments to commercial complexes. Our team of seasoned professionals brings together expertise in architecture, interior design, and sustainable practices to create spaces that inspire and endure.",
@@ -128,21 +135,41 @@ const Contractor_page = () => {
         "21 Avenue Projects is a dynamic architectural firm that specializes in creating innovative and sustainable design solutions. With over a decade of experience, we have built a reputation for delivering high-quality projects that exceed client expectations. Our team of talented architects and designers is dedicated to pushing the boundaries of design excellence while ensuring practicality and functionality in every project we undertake.",
     },
   ];
+
+  const handleClick = (contractor) => {
+    setSelectedContractor(contractor);
+  };
+
+  const handleClose = () => {
+    setSelectedContractor(null);
+  };
+
   return (
     <>
       <h1 className="title">Our Contractors</h1>
-      <div className="Contractorscards">
-        {Data.map((product) => (
-          <div key={product.id} className="Contractorscard">
-            <img src={product.img} alt={product.name} />
-            <h4>{product.name}</h4>
-            <p>+91 {product.number}</p>
-            <p>
-              Experience : <span>{product.experience}</span>
-            </p>
-          </div>
-        ))}
-      </div>
+      {selectedContractor ? (
+        <SingleContractorPage
+          selectedContractor={selectedContractor}
+          onClose={handleClose}
+        />
+      ) : (
+        <div className="Contractorscards">
+          {Data.map((contractor) => (
+            <div
+              key={contractor.id}
+              className="Contractorscard"
+              onClick={() => handleClick(contractor)}
+            >
+              <img src={contractor.img} alt={contractor.name} />
+              <h4>{contractor.name}</h4>
+              <p>+91 {contractor.number}</p>
+              <p>
+                Experience: <span>{contractor.experience}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };
