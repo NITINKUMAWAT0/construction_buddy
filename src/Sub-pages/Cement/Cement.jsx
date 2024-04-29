@@ -6,12 +6,14 @@ import CementSingle from "../CementSinglepage/cementSingle";
 const Cement = () => {
   const [selectedCement, setSelectedCement] = useState(null);
 
-  
+  // 
   const Data = [
     {
       id: 1,
       name: "Vardhman Traders and Kamdar Sanitary",
       number: 9351769205,
+      number: 9887228307,
+      location:'https://www.google.com/maps/place/Vardhman+Kamdar+Senetry/@26.8030734,75.82084,17z/data=!3m1!4b1!4m6!3m5!1s0x396dc986b93449d3:0x93b5b70ceaff7256!8m2!3d26.8030686!4d75.8234149!16s%2Fg%2F11s0q14t37?entry=ttu',
       experience: "24 years",
       address: "Kumbha marg, sector 9, Partap nagar, Jaipur, Rajasthan- 302033",
       img: "https://5.imimg.com/data5/SELLER/Default/2023/6/313054071/ZB/II/PN/58023111/new-product-500x500.jpeg",
@@ -20,7 +22,9 @@ const Cement = () => {
       id: 2,
       name: "Choudhary Building Materials Suppliers",
       number: 9887228307,
+      location:'https://www.google.com/maps/search/Choudhary+Building+Materials+Suppliers/@26.8030969,75.8131151,15z/data=!3m1!4b1?entry=ttu',
       experience: "15 years",
+      
       address:
         "Near bambala bridge, Bazari mandi, Tonk road, Kumbha marg, Partap nagar, Jaipur, Rajasthan- 302033",
       img: "https://scontent.fjai1-1.fna.fbcdn.net/v/t39.30808-6/240539266_387976572985874_24896458163614630_n.jpg?stp=dst-jpg_p180x540&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yUxCmXy0BeUQ7kNvgGulXHi&_nc_ht=scontent.fjai1-1.fna&oh=00_AfC9SBBjXxYecHsxi7xzKsGVMMcuObE16QWbhgpTmwOXcg&oe=663315F2",
@@ -30,6 +34,7 @@ const Cement = () => {
       name: "Vikas Traders and Builders",
       number: 9928737175,
       experience: "5 years",
+      location:'https://www.google.com/maps/search/Vikas+Traders+and+Builders/@26.8051946,75.7645714,13z/data=!3m1!4b1?entry=ttu',
       address:
         "Near lal bag bilwa, Tonk road, Shyam nagar, Jaipur, Rajasthan- 302022",
       img: "https://scontent.fjai1-4.fna.fbcdn.net/v/t1.6435-9/199729210_338800781236787_6875408051408104877_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=T-bU0AZKV3gQ7kNvgG22YkS&_nc_ht=scontent.fjai1-4.fna&oh=00_AfBusoi2ZKlykC8RtFi8cJjScWkqyX-St7gh4st9G3DIjw&oe=6654C3DD",
@@ -38,6 +43,7 @@ const Cement = () => {
       id: 4,
       name: "Pooja Traders and Properties",
       number: 9799609304,
+      location:'https://www.google.com/maps/place/Pooja+Traders+%26+Properties/@26.8054763,75.6409579,11z/data=!4m10!1m2!2m1!1sPooja+Traders+and+Properties!3m6!1s0x396dc92235712025:0x6f73912940ec8e10!8m2!3d26.759775!4d75.84619!15sChxQb29qYSBUcmFkZXJzIGFuZCBQcm9wZXJ0aWVzkgEQYnVzaW5lc3NfcmVsYXRlZOABAA!16s%2Fg%2F11td44115_?entry=ttu',
       experience: "9 years",
       address: "Murlipura at mishra ka bagh, Beelwa, Jaipur, Rajastha-303905",
       img: "https://c7.alamy.com/comp/E6CR2F/the-wall-of-one-jaypee-shop-is-painted-in-the-company-yellow-color-E6CR2F.jpg",
