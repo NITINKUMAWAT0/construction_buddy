@@ -53,6 +53,7 @@
         name: "Shree Vinayaka Marble and Granite",
         number: 8618210837,
         experience: "3 years",
+        location:'https://www.google.com/maps/place/Sri+vinayaka+marbles+%26+granites/@26.8042055,75.8554976,17z/data=!3m1!4b1!4m6!3m5!1s0x396dc9c093b0f4c7:0xd922456dd8f4fe99!8m2!3d26.8042007!4d75.8580725!16s%2Fg%2F11ns3nz5dl?entry=ttu',
         address:
           "Marble mandi, Opp. Akshya patra, Mahal road, Jagatpura, Jaipur, Rajasthan- 302017",
         img: "https://content.jdmagicbox.com/comp/goa/n2/0832px832.x832.090514044114.n9n2/catalogue/shree-vinayak-marble-and-granite-verna-goa-marble-dealers-ty70qx.jpg",
@@ -62,6 +63,8 @@
         name: "D.R.D Marble Traders",
         number: 9462029501,
         experience: "3 years",
+        location:'https://www.google.com/maps/place/D.R.D.+Marble+Traders/@26.8179621,75.8484721,17z/data=!3m1!4b1!4m6!3m5!1s0x396dc9cd02fe4b7d:0x72fc70830757b0fd!8m2!3d26.8179573!4d75.851047!16s%2Fg%2F1yg6nr0dd?entry=ttu',
+
         address:
           "Marble mandi, Opp. Akshya patra, Mahal road, Jagatpura, Jaipur, Rajasthan- 302017",
         img: "https://content.jdmagicbox.com/comp/jaipur/p3/0141px141.x141.120708040637.t7p3/catalogue/drd-marble-traders-jagat-pura-jaipur-granite-dealers-1zb5u.jpg",
@@ -71,6 +74,8 @@
         name: "Shree Hari Granite and Stone",
         number: "67726-996-666",
         experience: "5 years",
+        location:'https://www.google.com/maps/place/SHREE+HARI+GRANITE+%26+STONES/@26.8638918,75.7446522,12z/data=!4m10!1m2!2m1!1sShree+Hari+Granite+and+Stone!3m6!1s0x396dc9cf74738371:0xc68bb0b0513241a6!8m2!3d26.8043987!4d75.8589323!15sChxTaHJlZSBIYXJpIEdyYW5pdGUgYW5kIFN0b25lWh4iHHNocmVlIGhhcmkgZ3Jhbml0ZSBhbmQgc3RvbmWSAQ5zdG9uZV9zdXBwbGllcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSVE1YTlVTSGxSUlJBQuABAA!16s%2Fg%2F11j24jvbtg?entry=ttu',
+
         address:
           "Opp. akshya patra temple, Marble mandi, Jagatpua, Jaipur, Rajasthan- 302017",
         img: "https://images.jdmagicbox.com/comp/jaipur/f4/0141px141.x141.161230162001.p3f4/catalogue/shree-hari-granite-and-stones-jagatpura-getor-jaipur-granite-wholesalers-hwoflf54mj.jpg",
@@ -79,6 +84,8 @@
         id: 8,
         name: "Taysha Stone and Infrastructure",
         number: 8905945658,
+        location:'https://www.google.com/maps/place/Taysha+Stones+%26+Infrastructure+LLP/@26.8328685,75.8088194,14z/data=!4m10!1m2!2m1!1sTaysha+Stone+and+Infrastructure!3m6!1s0x396dc92ec4183d27:0x9c50f9c3bc478add!8m2!3d26.8136043!4d75.8527393!15sCh9UYXlzaGEgU3RvbmUgYW5kIEluZnJhc3RydWN0dXJlkgEWbmF0dXJhbF9zdG9uZV9zdXBwbGllcuABAA!16s%2Fg%2F11h4bzltxm?entry=ttu',
+
         experience: "8 years",
         address:
           "Vigyan nagar, Near 7 no. bus stand, Mahal road, Jagatpura, Jaipur, Rajasthan- 302017",

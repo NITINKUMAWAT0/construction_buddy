@@ -12,7 +12,6 @@ const Cement = () => {
       id: 1,
       name: "Vardhman Traders and Kamdar Sanitary",
       number: 9351769205,
-      number: 9887228307,
       location:'https://www.google.com/maps/place/Vardhman+Kamdar+Senetry/@26.8030734,75.82084,17z/data=!3m1!4b1!4m6!3m5!1s0x396dc986b93449d3:0x93b5b70ceaff7256!8m2!3d26.8030686!4d75.8234149!16s%2Fg%2F11s0q14t37?entry=ttu',
       experience: "24 years",
       address: "Kumbha marg, sector 9, Partap nagar, Jaipur, Rajasthan- 302033",
@@ -53,6 +52,8 @@ const Cement = () => {
       name: "Agarwal Building Material Suppliers",
       number: 8946747939,
       experience: "7 years",
+      location:'https://www.google.com/maps/place/Agrawal+Material+Suppliers/@26.8324814,75.7694713,13z/data=!4m10!1m2!2m1!1sAgarwal+Building+Material+Suppliers!3m6!1s0x396db609931f32cd:0xa1b8dd33119f5250!8m2!3d26.8442379!4d75.8084435!15sCiNBZ2Fyd2FsIEJ1aWxkaW5nIE1hdGVyaWFsIFN1cHBsaWVyc5IBGGJ1aWxkaW5nX21hdGVyaWFsc19zdG9yZeABAA!16s%2Fg%2F1tscmdf7?entry=ttu',
+
       address: "7 no. chouraha, Jagatpura, Jaipur, Rajasthan- 302017",
       img: "https://c7.alamy.com/comp/ET0MDB/promart-mall-365-days-discount-ahmedabad-gujarat-india-ET0MDB.jpg",
     },
@@ -60,16 +61,20 @@ const Cement = () => {
       id: 6,
       name: "Jay Shree Building Material",
       number: 9214851425,
+      location:'https://www.google.com/maps/place/Jay+Shree+Balaji+Building+Materials+%26+Contructor/@26.832392,75.8003714,15z/data=!4m10!1m2!2m1!1s%5DJay+Shree+Building+Material!3m6!1s0x396db61cd2e968cf:0x8f8b7efd5e60468!8m2!3d26.832392!4d75.818638!15sChxdSmF5IFNocmVlIEJ1aWxkaW5nIE1hdGVyaWFskgEQYnVzaW5lc3NfcmVsYXRlZOABAA!16s%2Fg%2F11td8c814s?entry=ttu',
       experience: "20 years",
       address:
         "Near getor railway station, Jagatpura, Jaipur, Rajasthan- 302017",
       img: "https://scontent.fjai1-1.fna.fbcdn.net/v/t39.30808-6/300442124_438971788252071_7937530990327105847_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JpZMf36aAmwAb4rhhec&_nc_ht=scontent.fjai1-1.fna&oh=00_AfCcbahP6rarK5YJDk7Vr3qdxFCmFC7NPZzoY-QsOsGiJg&oe=66333429",
     },
     {
+
+      // 
       id: 7,
       name: "Ameriya Building Material Suppliers",
       number: 9960389558,
       experience: "32 years",
+      location:'https://www.google.com/maps/place/Ameriya+Building+Material+Supp/@26.8346526,75.8233173,17z/data=!3m1!4b1!4m6!3m5!1s0x396db61eb8f2c3bf:0xc351385d1242d49f!8m2!3d26.8346478!4d75.8258922!16s%2Fg%2F1thpv799?entry=ttu',
       address:
         "Sanganer road, Near bus stand, Jagatpua, Jaipur, Rajasthan- 302017",
       img: "https://lh3.googleusercontent.com/p/AF1QipPDkuS-yZca3-WzK3khN52dZI9Y_oTox4FlLdDG=s1360-w1360-h1020",
@@ -79,6 +84,7 @@ const Cement = () => {
       name: "Dua and Company",
       number: 9829091818,
       experience: "10 years",
+      location:'https://www.google.com/maps/place/Dua+And+Company/@26.8030597,75.8066974,14z/data=!4m10!1m2!2m1!1sDua+and+Company!3m6!1s0x396dc9b6d5d6b851:0x3aba40fce83a9f7e!8m2!3d26.8030597!4d75.8448062!15sCg9EdWEgYW5kIENvbXBhbnmSARBidXNpbmVzc19yZWxhdGVk4AEA!16s%2Fg%2F11td8csjwh?entry=ttu',
       address: "60, Vivek vihar, Jagatpura, Jaipur, Rajasthan- 302017",
       img: "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=FUGrlDHp6GMz7DyhONBVFw&cb_client=search.gws-prod.gps&yaw=325.98868&pitch=0&thumbfov=100&w=260&h=175",
     },
